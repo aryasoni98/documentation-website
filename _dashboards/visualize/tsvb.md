@@ -32,7 +32,7 @@ Open OpenSearch Dashboards and follow these steps:
 1. Select **Dashboards Management** from the main menu on the left.
 2. Select **Data sources** and then select the **Create data source** button.
 3. On the **Create data source** page, enter the connection details and endpoint URL.
-4. On the **Home** page, select **Add sample data** and then select the **Add data** button for the **Sample web logs** dataset.
+4. On the home page, select **Add sample data** and then select the **Add data** button for the **Sample web logs** dataset.
 
 The following GIF shows the steps required to set up and connect a data source.
 
@@ -67,4 +67,4 @@ Annotations are markers that can be added to time-series visualizations. Follow 
 
 The visualization automatically updates to display your annotations, as shown in the following image.
 
-  <img src="{{site.url}}{{site.baseurl}}/images/dashboards/tsvb-with-annotations.png" alt="TSVB visualization with annotations" width="700"/>
+  ![TSVB visualization with annotations]({{site.url}}{{site.baseurl}}/images/dashboards/tsvb-with-annotations.png){: width="700" }

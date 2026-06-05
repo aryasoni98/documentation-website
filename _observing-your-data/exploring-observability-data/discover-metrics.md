@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Discover metrics
+title: Analyzing metrics in Discover
 nav_order: 50
-parent: Exploring observability data
+parent: Using Discover for observability
 ---
 
-# Discover metrics
+# Analyzing metrics in Discover
 **Introduced 3.5**
 {: .label .label-purple }
 
 The **Metrics** page in OpenSearch Dashboards provides a dedicated interface for discovering, querying, and visualizing time-series metric data. This page, shown in the following image, is optimized for working with Prometheus metrics using PromQL.
 
-<img src="{{site.url}}{{site.baseurl}}/images/dashboards/prometheus.png" alt="Metrics page interface" width="700">
+![Metrics page interface]({{site.url}}{{site.baseurl}}/images/dashboards/prometheus.png){: width="700" }
 
 The **Metrics** page is available in observability workspaces. To access the **Metrics** page, navigate to an **Observability** workspace. Then, in the left navigation, expand **Discover** and select **Metrics**.
 
@@ -87,7 +87,7 @@ Each query runs independently, and the results are combined in the output.
 
 ## Time filter
 
-Use the time filter to specify the time range for your metric data. Select the {::nomarkdown}<img src="{{site.url}}{{site.baseurl}}/images/icons/calendar-oui.png" class="inline-icon" alt="calendar icon"/>{:/} icon to access the time filter options:
+Use the time filter to specify the time range for your metric data. Select the {::nomarkdown}<img src="{{site.url}}{{site.baseurl}}/images/icons/calendar-icon.png" class="inline-icon" alt="calendar icon"/>{:/} (calendar) icon to access the time filter options:
 
 - **Quick select**: Choose a relative time range (for example, the last 15 minutes or the last 1 hour).
 - **Commonly used**: Select from predefined time ranges.

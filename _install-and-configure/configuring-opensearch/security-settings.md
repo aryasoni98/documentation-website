@@ -207,17 +207,17 @@ The Security plugin supports the following audit log settings:
 
 - `plugins.security.audit.config.pemkey_filepath` (Static): The `/config` relative file path to the Privacy Enhanced Mail (PEM) key used for audit logging.
 
-- `plugins.security.audit.config.pemkey_content` (Static): The base64-encoded content of the PEM key used for audit logging. This is an alternative to `...config.pemkey_filepath`.
+- `plugins.security.audit.config.pemkey_content` (Static): The Base64-encoded content of the PEM key used for audit logging. This is an alternative to `...config.pemkey_filepath`.
 
 - `plugins.security.audit.config.pemkey_password` (Static): Password for the PEM-formatted private key used by the client.
 
 - `plugins.security.audit.config.pemcert_filepath` (Static): The `/config` relative file path to the PEM certificate used for audit logging.
 
-- `plugins.security.audit.config.pemcert_content` (Static): The base64-encoded content of the PEM certificate used for audit logging. This is an alternative to specifying the file path with `...config.pemcert_filepath`.
+- `plugins.security.audit.config.pemcert_content` (Static): The Base64-encoded content of the PEM certificate used for audit logging. This is an alternative to specifying the file path with `...config.pemcert_filepath`.
 
 - `plugins.security.audit.config.pemtrustedcas_filepath` (Static): The `/config` relative filepath to trusted root certificate authority.
 
-- `plugins.security.audit.config.pemtrustedcas_content` (Static): The base64-encoded content of the root certificate authority. This is an alternative to `...config.pemtrustedcas_filepath`.
+- `plugins.security.audit.config.pemtrustedcas_content` (Static): The Base64-encoded content of the root certificate authority. This is an alternative to `...config.pemtrustedcas_filepath`.
 
 - `plugins.security.audit.config.webhook.url` (Static): The webhook URL.
 
@@ -227,7 +227,7 @@ The Security plugin supports the following audit log settings:
 
 - `plugins.security.audit.config.webhook.ssl.pemtrustedcas_filepath` (Static): The `/config` relative file path to trusted certificate authority against which webhook requests are verified.
 
-- `plugins.security.audit.config.webhook.ssl.pemtrustedcas_content` (Static): The base64-encoded content of the certificate authority used to verify webhook requests. This is an alternative to `...config.pemtrustedcas_filepath`.
+- `plugins.security.audit.config.webhook.ssl.pemtrustedcas_content` (Static): The Base64-encoded content of the certificate authority used to verify webhook requests. This is an alternative to `...config.pemtrustedcas_filepath`.
 
 - `plugins.security.audit.config.log4j.logger_name` (Static): A custom name for the Log4j logger.
 
@@ -381,7 +381,9 @@ The Security plugin supports the following transport layer security settings:
 
 - `plugins.security.ssl.http.crl.disable_crldp` (Static): Disables CRL endpoints in certificates. Default is `false` (CRL endpoints are enabled).
 
-- `plugins.security.ssl.allow_client_initiated_renegotiation` (Static): Enables or disables client renegotiation. Default is `false` (client initiated renegotiation is not allowed). 
+- `plugins.security.ssl.allow_client_initiated_renegotiation` (Static): Enables or disables client renegotiation. Default is `false` (client initiated renegotiation is not allowed).
+
+- `plugins.security_config.ssl_dual_mode_enabled` (Static): Enables dual-mode SSL, allowing a node to accept both encrypted (TLS) and non-encrypted traffic on the transport layer. When set to `true`, nodes can communicate with other nodes using either SSL or non-SSL connections. This setting is designed for transitional scenarios, such as migrating a cluster from having security disabled to having security enabled through a rolling restart process. This setting should not be used indefinitely in production environments. Use it only temporarily during the migration, and disable it once all nodes in the cluster are using the same security configuration. Default is `false`.
 
 ## Security plugin settings examples
 

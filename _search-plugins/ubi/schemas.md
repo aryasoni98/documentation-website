@@ -5,6 +5,8 @@ parent: User Behavior Insights
 grand_parent: Optimizing search quality
 has_children: false
 nav_order: 5
+redirect_from:
+  - /search-plugins/ubi/data-structures/
 ---
 
 # UBI index schemas
@@ -35,8 +37,8 @@ and how those, in turn, interact with the **OpenSearch cluster**, which houses t
 Blue arrows illustrate standard search, bold, dashed lines illustrate UBI-specific additions, and
 red arrows illustrate the flow of the `query_id` to and from OpenSearch.
 
-<img src="{{site.url}}{{site.baseurl}}/images/ubi/ubi-schema-interactions_legend.png" />
-<img src="{{site.url}}{{site.baseurl}}/images/ubi/ubi-schema-interactions.png" />
+![]({{site.url}}{{site.baseurl}}/images/ubi/ubi-schema-interactions_legend.png)
+![]({{site.url}}{{site.baseurl}}/images/ubi/ubi-schema-interactions.png)
 
 {% comment %}
 The mermaid source below is converted into a PNG under 
