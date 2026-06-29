@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Maps application
-parent: Creating visualizations in the Visualize application
+parent: Visualization types
+grand_parent: Creating visualizations in the Visualize application
+great_grand_parent: Building data visualizations
 has_children: true
 has_toc: false
 nav_order: 105

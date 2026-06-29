@@ -1,7 +1,9 @@
 ---
 layout: default
 title: State timeline
-parent: Creating visualizations using queries
+parent: Visualization types
+grand_parent: Creating visualizations using queries
+great_grand_parent: Building data visualizations
 nav_order: 60
 ---
 

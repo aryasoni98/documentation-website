@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Bar charts
-parent: Creating visualizations in the Visualize application
+parent: Visualization types
+grand_parent: Creating visualizations in the Visualize application
+great_grand_parent: Building data visualizations
 nav_order: 40
 redirect_from:
   - /dashboards/visualize/bar-charts/
@@ -79,5 +81,5 @@ Bar charts share the same configuration tabs as other aggregation-based visualiz
 
 ## Next steps
 
-- To choose a different visualization type, see [Choosing a visualization type]({{site.url}}{{site.baseurl}}/dashboards/visualize/visualize-app/viz-types/).
+- To choose a different visualization type, see [Visualization types]({{site.url}}{{site.baseurl}}/dashboards/visualize/visualize-app/viz-types/).
 - To add this visualization to a dashboard, see [Creating dashboards]({{site.url}}{{site.baseurl}}/dashboards/dashboard/).
